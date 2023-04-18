@@ -7,7 +7,7 @@ import (
 
 func main() {
 	data := []byte("Hello world!\n")
-	err := os.WriteFile("data1", data, 0644)
+	err := os.WriteFile("data1", data, 0644) //文件所有者可读可写，文件所属组和其他用户只可读取
 	if err != nil {
 		panic(err)
 	}
