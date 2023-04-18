@@ -1,0 +1,6 @@
+Handler本质上是一个接口，只要实现ServeHTTP方法就是Handler
+HandlerFunc本质是type HandlerFunc func(ResponseWriter, *Request)，就是一种类型，该类型实现了一个方法ServeHTTP
+
+Handle本质上调用了DefaultServeMux的Handle,用于处理器
+HandleFunc本质上调用了DefaultServeMux的HandleFunc,用于处理器函数
+
