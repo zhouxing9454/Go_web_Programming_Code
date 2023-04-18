@@ -1,4 +1,4 @@
-package main
+package chapter4
 
 import (
 	json2 "encoding/json"
