@@ -33,3 +33,4 @@ func (s *PostTestSuit) TestHandleGet(c *C) {
 }
 
 //go test -check.vv
+//https://zhuanlan.zhihu.com/p/45570168
