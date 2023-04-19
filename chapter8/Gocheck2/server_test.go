@@ -23,6 +23,10 @@ func Test(t *testing.T) {
 	TestingT(t)
 }
 
+// SetUpTest 运行每个测试用例之前都会运行一次
+// TearDownTest 运行每个测试用例之后都会运行一次
+// SetUpSuite 在套件开始运行之前运行一次
+// TearDownSuite 在所有测试都运行完毕之后运行一次
 func (s *PostTestSuit) SetUpTest(c *C) {
 	s.post = &FakePost{}
 	s.mux = http.NewServeMux()
